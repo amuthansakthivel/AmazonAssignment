@@ -75,4 +75,5 @@ public class BasePage {
 		moveToElement(DriverManager.getDriver().findElement(by));
 	}
 	
+	
 }

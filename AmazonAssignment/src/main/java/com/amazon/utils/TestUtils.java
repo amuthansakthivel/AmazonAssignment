@@ -3,7 +3,7 @@ package com.amazon.utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
@@ -33,6 +33,7 @@ import org.apache.commons.mail.HtmlEmail;
 import org.apache.commons.mail.MultiPartEmail;
 import org.apache.commons.mail.SimpleEmail;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.util.ArrayUtil;
 import org.apache.poi.util.IOUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -48,6 +49,7 @@ import org.testng.annotations.DataProvider;
 import com.amazon.browser.DriverManager;
 import com.amazon.constants.Constants;
 import com.amazon.listeners.ListenerClass;
+import com.amazon.pages.HomePage;
 
 
 
@@ -62,9 +64,26 @@ public class TestUtils {
 	public static FileInputStream fs;
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
-	
+	public static  FileOutputStream fileOut;
 
-
+	public static void createExcelAndWriteIntoIt(List<String> text) {
+		try {
+			String filepath=Constants.EXCELPATH+"\\"+HomePage.getUsername()+".xlsx";
+         XSSFWorkbook workbook = new XSSFWorkbook();
+         XSSFSheet sheet = workbook.createSheet("TC01"); 
+         Row row=sheet.createRow(0);
+         for(int i=0;i<text.size();i++) {
+         row.createCell(i).setCellValue(text.get(i));
+         }
+         
+         fileOut = new FileOutputStream(Constants.EXCELPATH+"\\"+HomePage.getUsername()+".xlsx"); 
+         workbook.write(fileOut); 
+         fileOut.close(); 
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 
 	/*

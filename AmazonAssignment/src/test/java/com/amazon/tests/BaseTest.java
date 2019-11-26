@@ -1,5 +1,8 @@
 package com.amazon.tests;
 
+import java.awt.Desktop;
+import java.io.File;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -8,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.amazon.browser.Driver;
 import com.amazon.browser.DriverManager;
+import com.amazon.constants.Constants;
 import com.amazon.reports.ExtentReport;
 
 
@@ -28,7 +32,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void wrapUp() {
-	//	DriverManager.getDriver().close();
+		DriverManager.getDriver().quit();
 	}
 
 	@BeforeSuite
@@ -41,7 +45,8 @@ public class BaseTest {
 	public void afterSuite() throws Exception {
 
 		ExtentReport.report.flush();
-		
+		File htmlFile = new File(Constants.EXTENTREPORTPATH);
+		Desktop.getDesktop().browse(htmlFile.toURI());
 		
 	}
 

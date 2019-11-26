@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="110309" started-at="2019-11-26T12:49:14Z" finished-at="2019-11-26T12:51:04Z">
+  <suite name="Suite" duration-ms="181970" started-at="2019-11-26T15:20:09Z" finished-at="2019-11-26T15:23:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="110309" started-at="2019-11-26T12:49:14Z" finished-at="2019-11-26T12:51:04Z">
+    <test name="Test" duration-ms="181970" started-at="2019-11-26T15:20:09Z" finished-at="2019-11-26T15:23:11Z">
       <class name="com.amazon.tests.LaptopPageTests">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="beforeSuite" is-config="true" duration-ms="151" started-at="2019-11-26T12:49:14Z" finished-at="2019-11-26T12:49:14Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="beforeSuite" is-config="true" duration-ms="279" started-at="2019-11-26T15:20:09Z" finished-at="2019-11-26T15:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="setUp" is-config="true" duration-ms="9013" started-at="2019-11-26T12:49:14Z" finished-at="2019-11-26T12:49:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="setUp" is-config="true" duration-ms="27594" started-at="2019-11-26T15:20:09Z" finished-at="2019-11-26T15:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC01()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="TC01" duration-ms="101276" started-at="2019-11-26T12:49:23Z" description="Check the apple laptop with 5 star ratings and high cost and store the product details to excel sheet" finished-at="2019-11-26T12:51:04Z">
+        <test-method status="PASS" signature="TC01()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="TC01" duration-ms="152955" started-at="2019-11-26T15:20:37Z" description="Check the apple laptop with 5 star ratings and high cost and store the product details to excel sheet" finished-at="2019-11-26T15:23:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01 -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="wrapUp" is-config="true" duration-ms="1" started-at="2019-11-26T12:51:04Z" finished-at="2019-11-26T12:51:04Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="wrapUp" is-config="true" duration-ms="1385" started-at="2019-11-26T15:23:10Z" finished-at="2019-11-26T15:23:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="afterSuite" is-config="true" duration-ms="295" started-at="2019-11-26T12:51:04Z" finished-at="2019-11-26T12:51:04Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.amazon.tests.LaptopPageTests@3c0ecd4b]" name="afterSuite" is-config="true" duration-ms="2948" started-at="2019-11-26T15:23:11Z" finished-at="2019-11-26T15:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
