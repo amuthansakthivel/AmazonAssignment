@@ -3,8 +3,8 @@
 	{
 		"global": 
 		{
-			"username"	: 		 "ankittolambiya@yahoo.com",	
-			"password"	: 		 "test@123" ,
+			"username"	: 		 "amazonuser",	
+			"password"	: 		 "editInJsonFile" ,
 			"url"		:		 "https://www.amazon.in/",
 			"browser"   :  		 "chrome"
 			
